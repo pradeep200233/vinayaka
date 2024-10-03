@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Create the invitation card element
+const card = document.createElement("div");
+card.style.width = "300px";
+card.style.height = "260px";
+card.style.padding = "20px";
+card.style.borderRadius = "10px";
+card.style.boxShadow = "4px 3px 4px";
+
+// Add the Ganesha image
+const ganeshaImg = document.createElement("img");
+ganeshaImg.src = "./ganesha.jpg";
+ganeshaImg.style.width = "130px";
+ganeshaImg.style.height = "130px";
+card.appendChild(ganeshaImg);
+
+const msg = document.createElement("p")
+msg.innerHTML="happy<br> <b>GANESH<br> CHATURTHI"
+    msg.style.fontSize = "20px";
+msg.style.marginLeft="150px"
+msg.style.marginTop="-70px"
+
+card.appendChild(msg)
+
+// Add the invitation message
+const message = document.createElement("p");
+message.textContent = "May the grace of god keep enlightening your lives and bless you always";
+message.style.fontSize = "15px";
+message.style.color = "black";
+message.style.marginTop="50px"
+card.appendChild(message);
+
+// Add the details
+const details = document.createElement("p");
+details.textContent = "Date: 7rd September 2024\nTime: 10:00 am\nLocation: Our Residence";
+details.style.fontSize = "16px";
+details.style.color = "black";
+card.appendChild(details);
+
+
+// Add the card to the page
+document.body.appendChild(card);
+    </script>
+</body>
+</html>
